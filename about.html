@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Photography Parallax</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+   
+</head>
+
+<body>
+    
+	<section class="cover-main" id="home">
+		<header>
+			<nav class="nav-wrapper">
+				<div class="logo">
+					<a href="#">
+						<img src="image.jpg" class="logo">
+					</a>
+				</div>
+
+				<ul class="menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html#work">My Work</a></li>
+					<li><a href="index.html#about">About</a></li>
+					<li><a href="#slider">Slider</a></li>
+					<li><a href="#footer">Footer</a></li>
+				</ul>
+			</nav>
+
+
+		</header>
+
+		<div class="wrapper">
+			<ul id="scene" 
+			data-invert-x="false" data-invert-y="false"
+			data-scalar-x="7"
+			data-scalar-y="15"
+			data-friction-x="0.1"
+			data-friction-y="0.1"
+			data-origin-x="0.5"
+			data-origin-y="0.5">
+
+				<li class="layer name" data-depth="1.90">Sabina Bojadžić</li>
+				<li class="layer title" data-depth="1.50">Chemical Engineer and Web Developer</li>
+				<li class="layer btn btn-main" data-depth="0.50">
+					<a href="https://sabina-bojadzic.github.io/My-Resume/" class="portfolio-btn">View Resume</a>
+					<a href="/about.html" class="contact-btn">Contact Me</a>
+				</li>
+			</ul>
+		</div>
+
+	</section>
+
+	<section>
+	<div class="abdiv">
+		<h1 class="cont">Contact Me</h1>
+		<p class="about">Sabina Bojadžić</p>
+		<p class="about">Chemical engineer and Web Developer</p>
+		<p class="about">Email: sabina-bojadzic@windowslive.com</p>
+		<p class="about">Github: <a style="text-decoration: none; color: black;" href="https://github.com/sabina-bojadzic">https://github.com/sabina-bojadzic</a></p>
+	</div>		
+
+	</section>
+
+	<div class="slider-div" id="slider">
+		
+		<h2 class="sub-title">Slider Showcase</h2>
+		<div class="slider">
+			<div class="slide">
+				<img src="images/1.jpg" alt="image" class="img-responsive" />
+			</div>
+
+			<div class="slide">
+				<img src="images/2.jpg" alt="image" class="img-responsive" />
+			</div>
+
+			<div class="slide">
+				<img src="images/3.jpg" alt="image" class="img-responsive" />
+			</div>
+
+			<div class="slide">
+				<img src="images/4.jpg" alt="image" class="img-responsive" />
+			</div>
+		</div>
+	</div>
+
+	<footer id="footer">
+		<h1>Made With Love ❤ By Sabina Bojadžić</h1>
+	</footer>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/parallax.min.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <script type="text/javascript" src="scripts/masonry.js"></script>
+     <script type="text/javascript" src="scripts/slick.min.js"></script>
+
+    <script type="text/javascript">
+    	var scene = document.getElementById('scene');
+    	var parallax = new Parallax(scene);
+
+    </script>
+
+</body>
+
+</html>
